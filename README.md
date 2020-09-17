@@ -7,7 +7,7 @@ In modern Ubuntu machines, to add an `ansible_user` user to the system and the s
 1) Create the user (`useradd --create-home --shell /bin/bash ansible_user`)  
 2) Add the user to sudoers (`echo -e 'ansible_user\tALL=(ALL)\tNOPASSWD:\tALL' > /etc/sudoers.d/ansible_user`)  
 
-Modify the Default_SudoUser variables in the script to reflect these, or specify them at the command line  
+Modify the `Default_SudoUser` variables in the script to reflect these, or specify them at the command line  
 `Default_SudoUser_Name='osimages'`  
 `Default_SudoUser_Password='Osimages123!'`  
 
